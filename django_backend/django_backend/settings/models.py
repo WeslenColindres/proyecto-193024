@@ -1,3 +1,6 @@
+from django.db import models
+
+
 class SiteSettings(models.Model):
     site_name = models.CharField(max_length=255)
     site_description = models.TextField(blank=True, null=True)
